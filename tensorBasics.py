@@ -67,11 +67,23 @@ def subtract_tensors():
     print(a)
     print(b)
     print(a-b)
+    # inbuilt: c = torch.sub(a,b)
     b.sub_(a)
     print(b)
 
+
+def mutliply_tensors():
+    a = torch.rand(2,2)
+    b = torch.rand(2,2);
+    print(a)
+    print(b)
+    print(a*b)
+    print(torch.mul(a,b))
+    b.mul_(a)
+    print(b)
+
 def main():
-    subtract_tensors()
+    mutliply_tensors()
 
 if __name__ == "__main__":
     main()
